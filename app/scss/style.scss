@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Yeseva One', cursive; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    width: 150px;
+    height: 55px;
+    padding: 18px 54px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #FFBD59;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+@import "header.scss";
+@import "promo.scss";
+@import "about.scss";
+@import "products.scss";
+@import "stage.scss";

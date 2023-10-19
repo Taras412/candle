@@ -1,0 +1,159 @@
+.header {
+    background: #FFF8F3;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+.phone {
+    position: relative;
+}
+.phone::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    top: -4px;
+    left: -22px;
+    background-image: url(../images/header/phone.png);
+}
+.menu__btn {
+    position: relative;
+    display: none;
+    border: none;
+    background: #FFF8F3;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    padding: 0;
+}
+.menu__btn span {
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 30px;
+    background-color: #7B6152;
+}
+.span-1 {
+    top: 0;
+}
+.span-2 {
+    top: 5px; 
+}
+.span-3 {
+    top: 10px;
+}
+.span-4 {
+    top: 15px;
+}
+.span-5 {
+    top: 20px;
+}
+.hamburger {
+    position: absolute;
+    background-color: #7B6152;
+    width: 153px;
+    height: 234px;
+    top: 0;
+    right: 0;
+    transform: translateY(-200%);
+    z-index: 5; 
+}
+.hamb {
+    transform: translateY(0%);
+    transition: transform .5s ease;
+}
+.hamburger__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    color: #FFF8F3;  
+}
+.close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    right: 11px;
+    display: flex;
+    cursor: pointer;
+}
+.close span:first-child {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #FFF8F3;
+    transform: rotate(45deg);
+    top: 0;
+    right: 6px;
+}
+.close span:last-child {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #FFF8F3;
+    transform: rotate(-45deg);
+    top: 0;
+    right: 6px;
+}
+
+
+
+
+
+
+
+//ADAPTATION
+@media (max-width: 1000px) {
+    .container {
+        max-width: 960px;
+        padding: 0 20px;
+    }
+    .header {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 840px) {
+    .container {
+        max-width: 640px;
+        padding: 0 10px;
+    }
+    .header {
+        font-size: 10px;
+    }
+    .menu__list {
+        gap: 15px;
+    }
+    .phone::before {
+        height: 14px;
+        width: 14px;
+        top: -3px;
+        left: -13px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 630px) {
+    .menu {
+        display: none;
+    }
+    .menu__btn {
+        display: block;
+    }
+    
+}

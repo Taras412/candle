@@ -1,0 +1,78 @@
+.promo {
+    padding-bottom: 200px;
+}
+.promo__wrapper {
+    position: relative;
+    padding-top: 150px;  
+}
+.promo__wrapper-txt {
+    width: 390px;
+}
+.promo__header {
+    font-family: Yeseva One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 15px;
+    
+}
+
+.promo__img {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+//ADAPTATION
+@media (max-width: 1000px) {
+    .promo__wrapper {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 850px) {
+    .promo {
+        padding-bottom: 150px;
+    }
+    .promo__img {
+        top: 30px;
+        left: 240px;
+        img {
+            width: 100%;
+        }
+    }
+    .promo__wrapper-txt {
+        width: 280px;
+    }
+    .promo__header {
+        font-size: 24px;
+    }
+}
+@media (max-width: 520px) {
+    .promo {
+        padding-bottom: 50px;
+    }
+    .promo__header {
+        font-size: 20px;
+    }
+    .promo__wrapper-txt {
+        font-size: 10px;
+    }
+}
+@media (max-width: 430px) {
+    picture {
+        display: none;
+    }
+    .promo__wrapper-txt {
+        margin: 0 auto;
+    }
+}
+
